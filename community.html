@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Community Feedback | Bantay Lupa</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header id="site-header"></header>
+
+  <main id="main">
+
+    <!-- Introduction -->
+    <section class="page-intro">
+      <span class="eyebrow">COMMUNITY FEEDBACK</span>
+
+      <h1>What have you noticed in your area?</h1>
+
+      <p class="lead">
+        Have you noticed repeated flooding, uneven ground,
+        or another environmental concern? Use this sample
+        form to describe what you saw and where it happened.
+      </p>
+    </section>
+
+    <!-- Sample observation form -->
+    <section class="split form-layout">
+      <form
+        id="observation-form"
+        class="card"
+        aria-labelledby="form-heading"
+        aria-describedby="demo-note"
+      >
+        <h2 id="form-heading">Describe your observation</h2>
+
+        <p class="notice" id="demo-note">
+          <strong>Sample form for our student project.</strong>
+          You can try filling it out, but your answers
+          will not be saved or sent.
+        </p>
+
+        <p>
+          Fields marked “required” need to be completed.
+          Your name and the date are optional.
+        </p>
+
+        <label for="location">
+          Barangay or location
+          <span>(required)</span>
+        </label>
+
+        <input
+          type="text"
+          id="location"
+          name="location"
+          maxlength="150"
+          placeholder="Enter the barangay or a nearby public landmark"
+          autocomplete="off"
+          required
+        >
+
+        <label for="observation">
+          What did you notice?
+          <span>(required)</span>
+        </label>
+
+        <select
+          id="observation"
+          name="observation"
+          required
+        >
+          <option value="">Choose an observation</option>
+          <option value="flooding">Repeated flooding</option>
+          <option value="uneven-ground">Uneven ground or floor</option>
+          <option value="cracks">Visible cracks</option>
+          <option value="water-concern">Water-related concern</option>
+          <option value="other">Other environmental concern</option>
+        </select>
+
+        <label for="date">
+          When did you notice it?
+          <span>(optional)</span>
+        </label>
+
+        <input
+          type="date"
+          id="date"
+          name="date"
+        >
+
+        <label for="description">
+          Tell us more
+          <span>(required; at least 10 characters)</span>
+        </label>
+
+        <textarea
+          id="description"
+          name="description"
+          rows="6"
+          minlength="10"
+          maxlength="2000"
+          placeholder="Describe what you saw. You may include how often it happens or how it affects the area."
+          aria-describedby="description-help"
+          required
+        ></textarea>
+
+        <p class="source" id="description-help">
+          Please leave out private details, such as phone
+          numbers, exact home addresses, or information
+          about other people.
+        </p>
+
+        <label for="name">
+          Name
+          <span>(optional)</span>
+        </label>
+
+        <input
+          type="text"
+          id="name"
+          name="name"
+          maxlength="100"
+          placeholder="You may leave this blank"
+          autocomplete="name"
+        >
+
+        <label class="checkbox">
+          <input
+            type="checkbox"
+            name="acknowledgment"
+            required
+          >
+
+          <span>
+            I understand that this is a sample form
+            and my answers will not be saved or sent.
+          </span>
+        </label>
+
+        <div class="actions">
+          <button type="submit">
+            Check My Entry →
+          </button>
+
+          <button type="reset" class="secondary">
+            Clear Form
+          </button>
+        </div>
+
+        <p
+          id="form-status"
+          role="status"
+          aria-live="polite"
+        ></p>
+      </form>
+
+      <!-- Help for visitors -->
+      <aside>
+        <article class="card">
+          <h2>Not sure what to write?</h2>
+
+          <p>
+            Start with these details:
+          </p>
+
+          <ul>
+            <li>
+              <strong>Where:</strong>
+              Name the barangay or a nearby public landmark.
+            </li>
+
+            <li>
+              <strong>When:</strong>
+              Include the date if you remember it.
+            </li>
+
+            <li>
+              <strong>What:</strong>
+              Describe what you actually saw.
+            </li>
+
+            <li>
+              <strong>How often:</strong>
+              Mention whether it happened once
+              or has happened several times.
+            </li>
+          </ul>
+
+          <h3>A simple example</h3>
+
+          <p>
+            “I noticed water covering part of the road
+            near a public market after heavy rain.
+            It made walking through the area difficult.”
+          </p>
+
+          <p class="source">
+            This is an example only, not an actual
+            report from a Hagonoy resident.
+          </p>
+        </article>
+
+        <div class="notice">
+          <strong>Describe what you saw.</strong>
+
+          <p>
+            Floodwater or a visible crack alone does not
+            confirm land subsidence. You do not need
+            to identify the cause to describe an observation.
+          </p>
+
+          <p>
+            This sample form is not connected to a government
+            office or an emergency reporting service.
+          </p>
+        </div>
+
+        <a class="button secondary" href="quiz.html">
+          Try the Awareness Quiz →
+        </a>
+      </aside>
+    </section>
+
+  </main>
+
+  <footer id="site-footer"></footer>
+</body>
+</html>

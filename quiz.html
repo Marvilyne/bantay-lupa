@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Awareness Quiz | Bantay Lupa</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header id="site-header"></header>
+
+  <main id="main">
+
+    <!-- Introduction -->
+    <section class="page-intro">
+      <span class="eyebrow">TRY THE QUIZ</span>
+
+      <h1>What have you learned about land subsidence?</h1>
+
+      <p class="lead">
+        Answer five questions based on the topics
+        covered on this website. Read the explanation
+        after each answer to understand it better.
+      </p>
+    </section>
+
+    <!-- Quiz instructions -->
+    <section aria-labelledby="instructions-heading">
+      <h2 id="instructions-heading">How to answer</h2>
+
+      <ol>
+        <li>
+          Read the question and choose one answer.
+        </li>
+
+        <li>
+          Select <strong>Check Answer</strong>
+          to see the explanation.
+        </li>
+
+        <li>
+          Select <strong>Next Question</strong>
+          to continue.
+        </li>
+      </ol>
+
+      <p>
+        Each correct answer earns one point.
+        Your score and answer review will appear
+        after the last question. There is no time limit,
+        and you can try again.
+      </p>
+    </section>
+
+    <!-- Questions and answer choices -->
+    <section
+      id="quiz"
+      class="quiz card"
+      aria-label="Land subsidence awareness quiz"
+    >
+      <p id="quiz-progress" class="eyebrow"></p>
+
+      <progress
+        id="progress"
+        max="5"
+        value="0"
+        aria-label="Questions answered"
+      ></progress>
+
+      <form id="quiz-form">
+        <fieldset>
+          <legend id="question"></legend>
+
+          <div id="options"></div>
+        </fieldset>
+
+        <button type="submit" id="check-answer">
+          Check Answer →
+        </button>
+      </form>
+
+      <!-- Explanation appears after checking an answer -->
+      <div
+        id="answer-feedback"
+        role="status"
+        aria-live="polite"
+      ></div>
+
+      <button
+        type="button"
+        id="next-question"
+        hidden
+      >
+        Next Question →
+      </button>
+
+      <!-- Score and answer review -->
+      <div id="quiz-results" hidden>
+        <h2 id="score-heading" tabindex="-1"></h2>
+
+        <p>
+          Read through your answers below.
+          If a topic is still unclear, you can visit
+          the learning pages before trying again.
+        </p>
+
+        <h3>Review your answers</h3>
+
+        <div id="review"></div>
+
+        <div class="actions">
+          <button type="button" id="retry">
+            Try Again →
+          </button>
+
+          <a class="button secondary" href="about.html">
+            Read the Basics Again
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <noscript>
+      <p class="notice">
+        Please enable JavaScript to answer the quiz.
+        You can still read the
+        <a href="about.html">About page</a>
+        and the other learning pages.
+      </p>
+    </noscript>
+
+    <!-- Related pages -->
+    <div class="actions">
+      <a class="button secondary" href="causes-effects.html">
+        Review Causes and Effects
+      </a>
+
+      <a class="button secondary" href="solutions.html">
+        Explore Community Actions
+      </a>
+    </div>
+
+  </main>
+
+  <footer id="site-footer"></footer>
+</body>
+</html>
